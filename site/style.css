@@ -1,0 +1,57 @@
+*{
+
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+
+--cor-principal:rgb(247, 37, 37);
+--cor-secundaria:#D73240;
+--cor-terciaria:#E04403;
+--cor-divisao:#efebe1;
+
+}
+header{
+position: relative;
+display: flex;
+justify-content: space-around;
+width: 100%;
+
+background-color:var(--cor-divisao) ;
+
+}
+header .logo{
+    
+    width: 75px;
+    height: 75px;
+    background-color: var(--cor-secundaria);
+}
+
+header .contesto{
+  
+    width: 75px;
+    height: 75px;
+    background-color: var(--cor-secundaria);
+
+
+}
+header .menu{
+    margin: 5px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 75px;
+    height: 75px;
+    background-color: var(--cor-secundaria);
+
+
+}
+header .contato{
+
+    width: 75px;
+    height: 75px;
+    background-color: var(--cor-secundaria);
+
+
+}
