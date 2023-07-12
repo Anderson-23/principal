@@ -8,7 +8,7 @@
 
 --cor-principal:rgb(247, 37, 37);
 --cor-secundaria:#D73240;
---cor-terciaria:#E04403;
+--cor-terciaria:#e08703;
 --cor-divisao:#efebe1;
 
 }
@@ -22,7 +22,9 @@ justify-content: space-between;
 padding:10px;
 width: 100%;
 height: 150px;
-background-color:var(--cor-divisao) ;
+background-image: url(../imagens/carnes-cpt.jpg) ;
+background-repeat: no-repeat;
+background-size: cover;
 
 
 }
@@ -51,16 +53,17 @@ header .contato{
 }
 header nav{
     position: absolute;
-    width: 100vw;
+    display: inline-block;
     bottom: 10px;
     left: 10px;
-    background-color: var(--cor-secundaria);
     padding: 2px 2px 2px 2px;
+    background-color: var(--cor-secundaria);
+    border-radius: 15px;
 }
 header nav ul{
 
     display:flex;
-    gap: 25px;
+    gap: 20px;
 }
 header nav ul li{
     list-style: none;
@@ -70,12 +73,65 @@ header nav ul li{
     &:hover{
 
         background-color: var(--cor-terciaria);
+
+    }
+ 
+}
+header nav #produto{
+    position: relative;
+}
+header nav #menudw{
+    
+    background-color: var(--cor-terciaria);
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    transition: height 500ms;
+    top: 100%;
+    left: 0;
+    height: 0;
+    width: 130px;
+
+ 
+
+}
+
+header nav ul li:hover #menudw{
+
+    height: 70px;
+    
+
+}
+header nav ul li ul{
+height: 0;
+overflow: hidden;
+
+    
+}
+
+/* deslocamento das  li home e compras */
+header nav ul #home{
+    transition: transform 500ms,background-color 500ms;
+    &:hover{
+
+        transform: translatex(6px);
     }
     
 }
+header nav ul #compras{
+    transition:  transform 500ms,background-color 500ms;
+    &:hover{
+
+        transform: translatex(-8px);
+    }
+    
+}
+/* ... */
+
 header nav ul li a{
    text-decoration: none;
-   color: black;
+   color: white;
     
 }
 
