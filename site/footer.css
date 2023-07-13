@@ -1,0 +1,68 @@
+footer{
+
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background-color: black;
+ 
+
+
+
+}
+footer #imagemfooter{
+
+    width: 70px;
+    border-radius: 50%;
+    top: 40px;
+    left: 25px;
+    position: absolute;
+    transition:  transform 300ms;
+    &:hover{
+        transform: scale(1.1);
+    }
+
+}
+
+/* menu */
+
+footer #footermenu{
+
+    padding-top:10px;
+    padding-bottom:10px;
+    top: 40px;
+    left: 250px;
+    position: absolute;
+
+}
+
+footer #footernav{
+
+    width: 70px;
+    border-radius: 50%;
+   
+
+}
+footer #footernav li{ 
+
+    list-style: none;
+    padding: 5px;
+    margin: 10px;
+    transition: transform 300ms;
+    &:hover{
+        transform: scale(1.1);
+    }
+
+}
+footer #footernav a{ 
+
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    font-size: larger;
+
+ 
+    
+}
+
+/* fim menu */
+
