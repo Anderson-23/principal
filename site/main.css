@@ -46,8 +46,6 @@ main .imagem-carne{
     border-radius: 25px 25px 0px 0px;
     transition: all 100ms;
 
-
-
 }
 
 
@@ -58,6 +56,4 @@ main .container-carne p{
     padding:3px;
     text-align: center;
    
-   
-
 }
